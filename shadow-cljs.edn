@@ -1,0 +1,21 @@
+{:dependencies [[cljs-http "0.1.44"]
+                [hickory "0.7.1"]]
+
+ :source-paths ["src"]
+
+ :builds
+ {:dev {:target :browser
+        :output-dir "dev/js"
+        :asset-path "/js"
+        :modules {:main {:entries [jarful.dev jarful.script jarful.bg]}}
+        :devtools {:http-root "dev"
+                   :http-port 4001
+                   :before-load jarful.script/stop
+                   :after-load jarful.script/start}}
+
+  :cs {:target :browser
+       :output-dir "dist"
+       :modules {:main {:entries [jarful.script]}}}
+  :bg {:target :browser
+       :output-dir "dist"
+       :modules {:bg {:entries [jarful.bg]}}}}}

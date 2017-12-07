@@ -1,0 +1,8 @@
+/dev/js
+/dist/main.js
+/dist/bg.js
+/dist/manifest.edn
+
+/node_modules
+
+/target

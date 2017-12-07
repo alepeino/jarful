@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "shadow-cljs watch dev",
+    "build-bg": "shadow-cljs release bg",
+    "build-script": "shadow-cljs release cs",
+    "build": "npm-run-all build-bg build-script",
+    "clear-dev": "rimraf target dev/js",
+    "clear-rel": "rimraf dist/main.js dist/bg.js dist/manifest.edn",
+    "clear": "npm-run-all clear-dev clear-rel"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
+    "shadow-cljs": "^2.0.114"
+  }
+}

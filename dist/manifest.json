@@ -1,0 +1,20 @@
+{
+  "name": "Jarful",
+  "description": "Copy the dependency vector from a Clojars badge to the clipboard.",
+  "manifest_version": 2,
+  "version": "1.0",
+  "icons": {
+    "512": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["bg.js"],
+    "persistent": false
+  },
+  "permissions": ["notifications"]
+}
