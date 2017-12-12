@@ -2,9 +2,11 @@
   "name": "Jarful",
   "description": "Copy the dependency vector from a Clojars badge to the clipboard.",
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "0.1",
   "icons": {
-    "512": "icon.png"
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   },
   "content_scripts": [
     {
