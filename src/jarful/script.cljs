@@ -23,8 +23,8 @@
   (when-let [dep (-> e .-target .-dataset (g/get "clojarsDependency"))]
     (doto e .stopPropagation .preventDefault)
     (if (to-clipboard dep)
-      (notify {:status 0 :msg (str "Copied " dep " to clipboard!")})
-      (notify {:status 1 :msg "Error"}))))
+      (notify {:status 0 :message (str "Copied " dep " to clipboard!")})
+      (notify {:status 1 :message "Error"}))))
 
 ;;;
 

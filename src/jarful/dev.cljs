@@ -2,7 +2,7 @@
   (:require [goog.object :as g]))
 
 (defn send-message-shim [m]
-  (js/console.log "Sent:" (:msg m))
+  (js/console.log "Sent:" (g/get m "message"))
   (if-let [handler (-> js/chrome .-runtime .-onMessageHandler)]
     (handler m {})))
 

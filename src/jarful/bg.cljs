@@ -7,7 +7,7 @@
     (create "jarful" #js{:type "basic"
                          :title "Jarful"
                          :iconUrl "icon.png"
-                         :message (g/get m "msg")
+                         :message (g/get m "message")
                          :priority (g/get m "status")})))
 
 (.. js/chrome -runtime -onMessage (addListener notify))
