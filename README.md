@@ -1,6 +1,1 @@
-
-
-
----
-
-> Icon by [IconIcons][https://icon-icons.com/es/icono/jar-cafe-frijoles/61153], [CC Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/)
+Chrome extension that copies the dependency vector from a Clojars badge (as seen in a Github README page) to the clipboard.
